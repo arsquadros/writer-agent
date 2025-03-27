@@ -14,9 +14,21 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+st.title("Agente \"Ghostwriter\"")
+
+st.write("Segue exemplos de posts de LinkedIn da Mônica Hauck.")
+
+with open("Monica/tests.pdf", "rb") as pdf_file:
+    pdf_bytes = pdf_file.read()
+
+    st.download_button(label="Baixar Exemplos",
+                    data=pdf_bytes,
+                    file_name="exemplos.pdf",
+                    mime='application/pdf')
+    
 text_area = st.text_area("Coloque as informações aqui", placeholder="Não sabe por onde começar? Siga os exemplos no documento acima.")
-appended_documents = st.file_uploader("Possui imagens ou PDFs em anexo para ajudar o modelo a gerar o texto? Evite envio de documentos muito grandes.", type=["jgp", "jpeg", "png", "pdf"], accept_multiple_files=True)
-submit_button = st.button("Enviar para gerar o post")
+appended_documents = st.file_uploader("Possui imagens ou PDFs em anexo para ajudar o modelo a gerar o texto? Evite envio de documentos muito grandes. Você pode passar múltiplos arquivos", type=["jgp", "jpeg", "png", "pdf"], accept_multiple_files=True)
+submit_button = st.button("Enviar e gerar o post")
 
 if submit_button and text_area != "":
     doc_content = "''"
@@ -58,7 +70,7 @@ if submit_button and text_area != "":
                 "content": [
                     {
                         "type": "text",
-                        "text": f"{text_area}\nSource Document: {doc_content}"
+                        "text": f"{text_area}\nSource Document: '{doc_content}'."
                     },
                 ] + images
             },
@@ -66,7 +78,5 @@ if submit_button and text_area != "":
         temperature=0.5,
         n=1
     )
-
-    print(f"{text_area}\nSource Document: {doc_content}")
 
     st.write(result.choices[0].message.content)
