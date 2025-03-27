@@ -16,7 +16,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("Agente \"Ghostwriter\"")
 
-st.write("Segue exemplos de posts de LinkedIn da Mônica Hauck.")
+st.write("Este agente segue exemplos de posts de LinkedIn da Mônica Hauck.")
 
 with open("Monica/tests.pdf", "rb") as pdf_file:
     pdf_bytes = pdf_file.read()
