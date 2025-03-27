@@ -27,7 +27,7 @@ with open("Monica/tests.pdf", "rb") as pdf_file:
                     mime='application/pdf')
     
 text_area = st.text_area("Coloque as informações aqui", placeholder="Não sabe por onde começar? Siga os exemplos no documento acima.")
-appended_documents = st.file_uploader("Possui imagens ou PDFs em anexo para ajudar o modelo a gerar o texto? Evite envio de documentos muito grandes. Você pode passar múltiplos arquivos", type=["jgp", "jpeg", "png", "pdf"], accept_multiple_files=True)
+appended_documents = st.file_uploader("Possui imagens ou PDFs em anexo para ajudar o modelo a gerar o texto? Você pode passar múltiplos arquivos, mas evite o envio de documentos muito grandes.", type=["jgp", "jpeg", "png", "pdf"], accept_multiple_files=True)
 submit_button = st.button("Enviar e gerar o post")
 
 if submit_button and text_area != "":
