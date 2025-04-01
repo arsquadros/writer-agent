@@ -18,7 +18,7 @@ st.title("Agente \"Ghostwriter\"")
 
 st.write("Este agente segue exemplos de posts de LinkedIn da Mônica Hauck.")
 
-with open("Monica/tests.pdf", "rb") as pdf_file:
+with open("Monica/25shot_tests.pdf", "rb") as pdf_file:
     pdf_bytes = pdf_file.read()
 
     st.download_button(label="Baixar Exemplos",

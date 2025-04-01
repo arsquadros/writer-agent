@@ -11,6 +11,6 @@ abc = {
 print([{"E": 4}, abc])
 
 def generate_pdf_from_html(filepath):
-    pdfkit.from_string(open(filepath, "r").read(), output_path="Monica/tests.pdf")
+    pdfkit.from_string(open(filepath, "r").read(), output_path="Monica/videos_tests.pdf")
 
-generate_pdf_from_html("Monica/tests.html")
+generate_pdf_from_html("Monica/videos_tests.html")

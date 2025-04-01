@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização de Respostas</title>
+    <style>
+        body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    padding: 0; 
+    background-color: #222; 
+    color: #333; 
+}
+
+.container { 
+    max-width: 1000px; 
+    margin: auto; 
+    background: #f5f5f5; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.section { 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border-radius: 5px; 
+    background: #ddd; 
+}
+
+.title { 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    color: #0056b3;
+}
+
+.responses { 
+    display: flex; 
+    gap: 10px;
+}
+
+.response { 
+    flex: 1; 
+    padding: 15px; 
+    border-radius: 5px; 
+    background: #ccc; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.single-response {
+    flex: 2; /* Ocupa o espaço de dois posts */
+}
+
+.separator { 
+    margin: 20px 0; 
+    border-top: 2px solid #999; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="title">Prompt:</div>
+            <div id="prompt">
+                Não quero trazer dados. Quero contar sobre minha experiencia empreendedora.
+                Para mim um negócio começa com um "sonho grande", e ele nos inspira.
+                Inclua as palavras-chave "sonho", "momentos difíceis", "persistência", e "planejamento".
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response">
+                <div class="title">Post do Bot:</div>
+                <div id="postbot">
+                    Um negócio nasce de um sonho grande, né? Aquela visão que te faz vibrar e querer construir algo que realmente importa.
+                    No meu caso não foi diferente. Mas a gente sabe que o caminho não é sempre um mar de rosas. Os momentos difíceis vão chegar, e nesses momentos a persistência e o planejamento são essenciais.
+                    Sonhar grande te dá a energia, mas é a persistência que te mantém em movimento quando as coisas ficam complicadas. E o planejamento te dá um mapa, te ajuda a entender onde você está e para onde você quer ir.
+                    Acredite no seu sonho, planeje cada passo e persista, mesmo quando a jornada parecer longa demais. Vale a pena.
+                </div>
+            </div>
+            <div class="response">
+                <div class="title">Post Real:</div>
+                <div id="postreal">
+                    Hoje não quero trazer dados, quero contar sobre a minha experiência de empreendedora.<br><br>
+                    Para mim, todo negócio começa com o que eu chamo de “sonho grande”. É ele que nos inspira, motiva e nos faz acordar todos os dias. Eu acredito muito nesse sonho e também tenho muita fé. Afinal, foi ela que me sustentou em momentos difíceis.<br><br>
+                    Mas, sonhar grande não pode ser o que faz você tirar os pés da realidade. Planejamento é pragmático e realista. Sonhar grande não significa ignorar a realidade. Pelo contrário, para chegar no resultado, é preciso um plano sólido, com a clareza de onde estamos hoje e onde queremos chegar.<br><br>
+                    É construir o passo a passo que vai levar para o sonho grande. Persistência, quem aguenta mais tempo de pé mesmo contra as probabilidades e a capacidade de adaptar rápido ao longo da jornada fazem parte. Sonhar grande é começar pequeno, mas não deixar de avançar. É nisso que eu acredito. E vocês?
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        
+        <div class="section">
+            <div class="title">Prompt:</div>
+            <div id="prompt">
+                Estruture um post sobre minha experiência empreendedora. Ele deve possuir 3 partes falando sobre o "sonho grande" do empreendedor,
+                que nos inspira e motiva, a importância do planejamento para nos manter na realidade, e persistência para não desistirmos nos momentos difíceis.
+                Palavras-chave: sonho grande, momentos difíceis, persistência, planejamento.
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response">
+                <div class="title">Post do Bot:</div>
+                <div id="postbot">
+                    Todo negócio começa com um sonho grande, uma visão que te acende por dentro e te faz querer construir algo que faça a diferença. Essa visão é o combustível que te impulsiona, a razão pela qual você acorda todos os dias com energia.
+                    Mas não dá para viver só de sonho, né? É aí que entra o planejamento. Ele te ajuda a manter os pés no chão, a entender a realidade do mercado e a traçar um caminho claro para alcançar seus objetivos. Planejar é essencial para transformar o sonho em algo concreto.
+                    E, claro, os momentos difíceis vão chegar. Empreender não é fácil, e a jornada é cheia de desafios. É nesses momentos que a persistência se torna fundamental. Não desista! Aprenda com os erros, ajuste a rota e siga em frente. Acredite no seu sonho, planeje cada passo e persista. A recompensa virá.
+                </div>
+            </div>
+            <div class="response">
+                <div class="title">Post Real:</div>
+                <div id="postreal">
+                    Hoje não quero trazer dados, quero contar sobre a minha experiência de empreendedora.<br><br>
+                    Para mim, todo negócio começa com o que eu chamo de “sonho grande”. É ele que nos inspira, motiva e nos faz acordar todos os dias. Eu acredito muito nesse sonho e também tenho muita fé. Afinal, foi ela que me sustentou em momentos difíceis.<br><br>
+                    Mas, sonhar grande não pode ser o que faz você tirar os pés da realidade. Planejamento é pragmático e realista. Sonhar grande não significa ignorar a realidade. Pelo contrário, para chegar no resultado, é preciso um plano sólido, com a clareza de onde estamos hoje e onde queremos chegar.<br><br>
+                    É construir o passo a passo que vai levar para o sonho grande. Persistência, quem aguenta mais tempo de pé mesmo contra as probabilidades e a capacidade de adaptar rápido ao longo da jornada fazem parte. Sonhar grande é começar pequeno, mas não deixar de avançar. É nisso que eu acredito. E vocês?
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="section">
+            <div class="title">Prompt:</div>
+            <div id="prompt">
+                Pensamento do dia: O poder do líder está em impulsionar o melhor de cada um. Palavras-chave: potencial, performance, impulsionar, poder do líder.
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response">
+                <div class="title">Post do Bot:</div>
+                <div id="postbot">
+                    O verdadeiro poder do líder não está em mandar, mas em impulsionar o melhor de cada um. Acredito que o líder de verdade enxerga o potencial de cada membro do time e cria as condições para que todos possam alcançar a sua melhor performance. Liderar é inspirar, é motivar, é fazer com que as pessoas acreditem em si mesmas e no seu potencial.
+                </div>
+            </div>
+            <div class="response">
+                <div class="title">Post Real:</div>
+                <div id="postreal">
+                    [Imagem]<br><br>
+
+                    Pensamento do dia: Você está realmente extraindo o máximo potencial da sua equipe?<br><br>
+                    A verdadeira performance não é apenas sobre metas batidas, mas sobre o líder que inspira e potencializa cada membro do seu time. Um líder excepcional não apenas orienta; ele desperta talentos adormecidos, transforma desafios em oportunidades e molda uma cultura de excelência.<br><br>
+                    O poder de uma equipe está diretamente ligado à habilidade do líder em impulsionar o melhor de cada um!
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="section">
+            <div class="title">Prompt:</div>
+            <div id="prompt">
+                Crie um post de "pensamento do dia", propondo uma refrexão sobre o poder do líder de impulsionar o melhor de cada um. escreva 3 frases, uma propondo o pensamento,
+                outra sobre o que um líder excepcional faz, orientando, impulsionando e potencializando cada um, não somente cobrando resultados, e outro sobre o poder de uma equipe
+                estar ligado às capacidades do líder. Palavras-chave: potencial, performance, impulsionar, poder do líder.
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response">
+                <div class="title">Post do Bot:</div>
+                <div id="postbot">
+                    Pensamento do dia: O poder do líder reside em impulsionar o melhor de cada um.<br><br>
+                    Um líder excepcional não apenas cobra resultados, ele orienta, impulsiona e potencializa cada membro da equipe. Ele enxerga o potencial individual e cria um ambiente onde a performance de cada um atinge seu máximo.<br><br>
+                    A capacidade de uma equipe é diretamente proporcional à capacidade do seu líder em despertar e nutrir o talento de cada pessoa.
+
+                </div>
+            </div>
+            <div class="response">
+                <div class="title">Post Real:</div>
+                <div id="postreal">
+                    [Imagem]<br><br>
+
+                    Pensamento do dia: Você está realmente extraindo o máximo potencial da sua equipe?<br><br>
+                    A verdadeira performance não é apenas sobre metas batidas, mas sobre o líder que inspira e potencializa cada membro do seu time. Um líder excepcional não apenas orienta; ele desperta talentos adormecidos, transforma desafios em oportunidades e molda uma cultura de excelência.<br><br>
+                    O poder de uma equipe está diretamente ligado à habilidade do líder em impulsionar o melhor de cada um!
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="section">
+            <div class="title">Prompt:</div>
+                <div id="prompt">
+                    Dias maus sempre vão existir, mas independente da dificuldade é importante persistir.
+                    Em 2015, durante o crescimento da Sólides, eu e meu sócio Alê Garcia quase quebramos,
+                    investimos em altas tecnologias, mas dimensionamos errado e quase ficamos sem recursos.
+                    Mas insistimos na visão de criar uma plataforma completa de gestão pessoas, agora ouvindo mais nossos colaboradores.
+                    Mas agora, olhando para trás, fica evidente que os dias bons chegaram. Mesmo ainda tendo dias maus, o sucesso é mais sobre resiliência do que sobre nunca falhar.
+                    Palavras-chave: persistência, dificuldades, dias maus, dias bons, resiliência, adaptação.
+                    Transcrição do vídeo: "Mesmo nos momentos mais difíceis, eu acho muito importante você ter essa
+                    firme determinação de fazer o que precisa ser feito, caminhar, e continuar andando, continuar seguindo, né?
+                    Porque existem os dias maus, mas eles não duram pra sempre. Eu lembro que na época eu não via assim,
+                    eu não conseguia visualizar os dias bons. Mas eles... passa o tempo, eles vêm. As coisas mudam, né? As coisas mudam."
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response">
+                <div class="title">Post do Bot:</div>
+                <div id="postbot">
+                    [Vídeo]<br><br>
+
+                    Os dias maus sempre vão existir, faz parte da jornada. Em 2015, durante o crescimento da Sólides, meu sócio Alê Garcia e eu quase quebramos a empresa. Investimos pesado em tecnologia, mas erramos a mão no planejamento e quase ficamos sem recursos.<br><br>
+                    Foi um período de muita dificuldade, mas persistimos na nossa visão de criar uma plataforma completa de gestão de pessoas, aprendendo a ouvir mais nossos colaboradores.<br><br>
+                    Hoje, olhando para trás, vejo que os dias bons chegaram. E mesmo com os desafios que ainda surgem, percebo que o sucesso é muito mais sobre resiliência e adaptação do que sobre nunca falhar.
+                </div>
+            </div>
+            <div class="response">
+                <div class="title">Post Real:</div>
+                <div id="postreal">
+                    [Vídeo]<br><br>
+
+                    Dias maus sempre vão existir. Mas, independente da dificuldade, o importante é persistir e continuar caminhando.<br><br>
+                    Em 2015, durante o crescimento da Sólides, eu e meu sócio, Alê Garcia, quase quebramos. Fizemos investimentos altos em tecnologia, mas dimensionamos errado o projeto e acabamos sem recursos no meio do caminho. Foi um período de muita reflexão e aprendizado. Em vez de desistir, decidimos recomeçar. Insistimos na visão de criar uma plataforma completa de gestão de pessoas, mas desta vez com uma nova abordagem, ouvindo mais nossos colaboradores.<br><br>
+                    Hoje, quando vejo tudo que construímos, todas as conquistas e vitórias que tivemos ao longo do caminho, fica evidente que os dias bons chegam. Mas não se engane, ainda temos dias maus e novas batalhas a serem vencidas. O sucesso é mais sobre resiliência e adaptação do que sobre nunca falhar!<br><br>
+                    E você, já passou por um momento em que pensou em desistir, mas encontrou forças para seguir em frente?
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="section">
+            <div class="title">Prompt:</div>
+                <div id="prompt">
+                    Crie um post sobre dias maus. 3 frases, uma para falar que dias maus sempre vão existir, mas é importante continuar caminhando,
+                    outro para falar da quase falência da Sólides em 2015, em que investiram em novas tecnologias, mas direcionamos errado, e quase faltaram recursos,
+                    mas não desistimos e insistimos em criar uma plataforma completa de gestão de pessoas, agora ouvindo mais os colaboradores. Outra para olhar
+                    para o passado e ver que os dias bons chegaram, e que mesmo ainda tendo dias ruins, a persistência nos faz atingir o sucesso.
+                    Palavras-chave: persistência, dificuldades, dias maus, dias bons, resiliência, adaptação.
+                    Transcrição do vídeo: "Mesmo nos momentos mais difíceis, eu acho muito importante você ter essa
+                    firme determinação de fazer o que precisa ser feito, caminhar, e continuar andando, continuar seguindo, né?
+                    Porque existem os dias maus, mas eles não duram pra sempre. Eu lembro que na época eu não via assim,
+                    eu não conseguia visualizar os dias bons. Mas eles... passa o tempo, eles vêm. As coisas mudam, né? As coisas mudam."
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response">
+                <div class="title">Post do Bot:</div>
+                <div id="postbot">
+                    [Vídeo]<br><br>
+
+                    Dias maus sempre existirão, mas a chave é continuar caminhando, aprendendo com cada tropeço e mantendo a fé no futuro.<br><br>
+                    Em 2015, a Sólides quase quebrou! Investimos alto em tecnologia, mas erramos a mão e os recursos quase acabaram. A lição? Ouvir mais nossos colaboradores e persistir na visão de uma plataforma completa de gestão de pessoas.<br><br>
+                    Olhando para trás, vejo que os dias bons chegaram. E mesmo com os desafios de hoje, a resiliência e a persistência nos mostram que o sucesso é sobre nunca desistir, não sobre nunca falhar.
+                </div>
+            </div>
+            <div class="response">
+                <div class="title">Post Real:</div>
+                <div id="postreal">
+                    [Vídeo]<br><br>
+
+                    Dias maus sempre vão existir. Mas, independente da dificuldade, o importante é persistir e continuar caminhando.<br><br>
+                    Em 2015, durante o crescimento da Sólides, eu e meu sócio, Alê Garcia, quase quebramos. Fizemos investimentos altos em tecnologia, mas dimensionamos errado o projeto e acabamos sem recursos no meio do caminho. Foi um período de muita reflexão e aprendizado. Em vez de desistir, decidimos recomeçar. Insistimos na visão de criar uma plataforma completa de gestão de pessoas, mas desta vez com uma nova abordagem, ouvindo mais nossos colaboradores.<br><br>
+                    Hoje, quando vejo tudo que construímos, todas as conquistas e vitórias que tivemos ao longo do caminho, fica evidente que os dias bons chegam. Mas não se engane, ainda temos dias maus e novas batalhas a serem vencidas. O sucesso é mais sobre resiliência e adaptação do que sobre nunca falhar!<br><br>
+                    E você, já passou por um momento em que pensou em desistir, mas encontrou forças para seguir em frente?
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="section">
+            <div class="title">Prompt:</div>
+                <div id="prompt">
+                    Reduza suas taxas de turnover com a Sólides. Palavras-chave: turnover, Sólides, plataforma de RH.
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response">
+                <div class="title">Post 1 do Bot:</div>
+                <div id="postbot">
+                    [Imagem]<br><br>
+                    
+                    Se o seu sonho é crescer, a Sólides é para você! ✨<br><br>
+                    Sabe aquele sonho de ver sua empresa decolar, com um time engajado e resultados incríveis? A gente sabe que não é fácil, mas com a Sólides, você pode transformar esse sonho em realidade! 😉<br><br>
+                    Implementar a Sólides é um investimento no presente e no futuro da sua empresa. Com a nossa plataforma completa de RH, você automatiza processos, analisa dados com inteligência e toma decisões estratégicas que impulsionam o crescimento.<br><br>
+                    E os números não mentem: empresas com 100 funcionários podem economizar em média R$290 mil por ano diminuindo o turnover! 🤯 Além disso, você pode ter:
+                    <ul>
+                        <li>
+                            43% menos rotatividade de pessoal
+                        </li>
+                        <li>
+                            52% de crescimento da empresa
+                        </li>
+                        <li>
+                            78% de ganho em produtividade
+                        </li>
+                    </ul>
+
+                    Então, se você quer ver sua empresa crescendo e seus colaboradores realizados, não perca tempo! A Sólides é o parceiro ideal para te ajudar a alcançar seus objetivos. 😉
+                </div>
+            </div>
+            <div class="response">
+                <div class="title">Post 2 do Bot:</div>
+                <div id="postreal">
+                    [Imagem + PDF]<br><br>
+                    
+                    E aí, RH! Cansado de ver gente boa indo embora da sua empresa? A rotatividade alta não só desmotiva o time, como também pesa no bolso, né? 💸<br><br>
+                    Mas e se eu te dissesse que existe uma forma de virar esse jogo? Com a Sólides, você não só atrai os melhores talentos, como também os mantém engajados e felizes! 🤩<br><br>
+                    Com a nossa plataforma completa de RH, você automatiza processos, analisa dados com inteligência e toma decisões estratégicas que impactam diretamente na retenção de talentos. E os resultados falam por si: empresas com 100 funcionários podem economizar em média R$290 mil por ano diminuindo o turnover! 🤯<br><br>
+                    Se o seu sonho é ver sua empresa crescendo e seus colaboradores realizados, a Sólides é o caminho! 😉
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="section">
+            <div class="title">Prompt:</div>
+                <div id="prompt">
+                    Escreva sobre as dificuldades passadas no processo de desenvolvimento da Sõlides e crescimento pessoal, risco de falência, e como chegamos aos resultados de hoje. Palavras-chave: resiliência, plataforma de RH, gestão de pessoas, sonho, realidade.
+            </div>
+        </div>
+        <div class="responses">
+            <div class="response single-response">
+                <div class="title">Post do Bot:</div>
+                <div id="postbot">
+                    [Imagem + PDF]<br><br>
+                    
+                    Olha, gente, empreender não é pra amador, viu? Tem glamour, tem, mas tem muito perrengue também. E quem me conhece sabe que eu não sou de esconder as dificuldades, porque é nos momentos de crise que a gente aprende e cresce de verdade.<br><br>
+                    Lembro que lá no comecinho da Sólides, a gente quase quebrou a empresa! 🤯 A gente tinha um sonho enorme de criar uma plataforma de RH completa, que realmente fizesse a diferença na vida das pessoas e das empresas. Mas no meio do caminho, a gente se perdeu, tomou decisões erradas e viu o dinheiro sumindo. Foi desesperador!<br><br>
+                    Mas sabe o que nos manteve de pé? A nossa resiliência e a nossa fé no nosso sonho. A gente aprendeu com os nossos erros, ajustou a rota e seguiu em frente, um passo de cada vez. E hoje, olhando para trás, vejo que todo o esforço valeu a pena.<br><br>
+                    A Sólides se tornou uma realidade, uma plataforma de RH que ajuda milhares de empresas a transformar a gestão de pessoas e a alcançar resultados incríveis. E o melhor de tudo: a gente continua sonhando grande e trabalhando duro para fazer a diferença na vida das pessoas.<br><br>
+                    Então, se você também tem um sonho, não desista! Acredite em você, persista e aprenda com os seus erros. A jornada pode ser difícil, mas a recompensa é muito maior.
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+</body>
+</html>
