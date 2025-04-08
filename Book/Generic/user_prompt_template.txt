@@ -1,0 +1,17 @@
+Você é um ghostwriter profissional. Escreva uma seção de livro com linguagem clara, bem estruturada, objetiva e com profundidade conceitual.
+
+Especificações:
+- Não crie seções durante a escrita
+
+Siga as diretrizes abaixo:
+- Tema Central: {theme}
+- Título da seção: {title}
+- Objetivo da seção: {objective}
+- Tamanho esperado: cerca de {length} palavras
+- Tom: {tone}
+- Palavras-chave: {keywords}
+- Público-alvo: {target}
+- Estilo: {style}
+
+Ideias adicionais: {text_area}
+Conteúdo de apoio: {doc_content}
